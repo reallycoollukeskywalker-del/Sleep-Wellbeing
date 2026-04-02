@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep & Wellbeing | Personal Project by Lukas Schulz</title>
+    <meta
+      name="description"
+      content="A student-focused website exploring how sleep habits affect focus, mood, and wellbeing through research, reflection, and personal tracking."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sleep-wellbeing.css" />
+  </head>
+  <body>
+    <div class="page-glow page-glow--one" aria-hidden="true"></div>
+    <div class="page-glow page-glow--two" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-shell">
+        <a class="brand" href="#hero" aria-label="Sleep and Wellbeing home">
+          <span class="brand__mark">LS</span>
+          <span class="brand__copy">
+            <strong>Sleep &amp; Wellbeing</strong>
+            <small>Personal Project by Lukas Schulz</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation"></nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="section-shell hero__grid">
+          <div class="hero__copy reveal">
+            <p class="eyebrow">Health, wellbeing, and student life</p>
+            <h1>Sleep shapes how students focus, feel, and function.</h1>
+            <p class="hero__lead">
+              This website turns my research, tracking process, and reflection into a clear guide
+              that explains why sleep matters and how students can improve it in realistic ways.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#project">Explore the project</a>
+              <a class="btn btn--ghost" href="#tips">Jump to the tips</a>
+            </div>
+
+            <ul class="hero__badges" id="hero-badges"></ul>
+          </div>
+
+          <div class="hero__visual reveal" data-reveal="scale">
+            <article class="hero-card">
+              <div class="hero-card__top">
+                <span class="pill pill--accent">Teen sleep benchmark</span>
+                <span class="pill">8 to 10 hours</span>
+              </div>
+
+              <h2>What I investigated</h2>
+              <p>
+                I tracked bedtime, wake time, caffeine use, and focus so I could compare daily
+                habits with research on mood, concentration, and wellbeing.
+              </p>
+
+              <div class="sleep-band" aria-label="Recommended sleep range for teenagers">
+                <div class="sleep-band__track">
+                  <div class="sleep-band__target"></div>
+                </div>
+                <div class="sleep-band__labels">
+                  <span>6h</span>
+                  <span>8h</span>
+                  <span>10h</span>
+                  <span>12h</span>
+                </div>
+              </div>
+
+              <div class="hero-card__stats" id="tracker-quick-stats"></div>
+            </article>
+
+            <aside class="hero-note">
+              <span class="hero-note__label">Project insight</span>
+              <p>
+                The biggest shift was moving from a vague feeling of “I’m tired” to evidence I
+                could actually analyze and reflect on.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--light" id="impact">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Why sleep matters</p>
+            <h2>One habit, three major effects.</h2>
+            <p>
+              My project focused on the everyday outcomes that students notice most: focus in
+              school, emotional balance, and overall wellbeing.
+            </p>
+          </div>
+
+          <div class="impact-grid" id="impact-grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="project">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Project foundation</p>
+            <h2>From personal experience to a useful final product.</h2>
+            <p>
+              I chose sleep because it affects energy, concentration, and mood, yet students often
+              treat it like something they can ignore. This project connects to the global context
+              of identities and relationships through health and wellbeing.
+            </p>
+          </div>
+
+          <div class="project-grid" id="project-grid"></div>
+        </div>
+      </section>
+
+      <section class="section section--tint" id="research">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Research and evidence</p>
+            <h2>What the science says about student sleep.</h2>
+            <p>
+              My tracker mattered most when I compared it with outside research. These themes
+              shaped the advice on the website and gave the project a stronger scientific base.
+            </p>
+          </div>
+
+          <div class="research-grid" id="research-grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="tracker">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Tracker design</p>
+            <h2>How I collected evidence from everyday habits.</h2>
+            <p>
+              I used a Google Sheets sleep tracker to record my routine and compare it to what the
+              research suggested. This section now uses the 4-week tracker data to show the actual
+              sleep trend, weekly averages, and patterns linked to screen time and caffeine.
+            </p>
+          </div>
+
+          <div class="evidence-grid" id="evidence-grid"></div>
+
+          <div class="tracker-layout">
+            <article class="tracker-card tracker-card--progress reveal">
+              <div class="tracker-card__header">
+                <span class="pill">Collection progress</span>
+                <strong id="progress-copy">4 weeks collected</strong>
+              </div>
+
+              <h3>Dataset growth plan</h3>
+              <p>
+                The current tracker covers 4 weeks. In reflection, I identified three months, or
+                about 12 weeks, as a better target for clearer long-term patterns.
+              </p>
+
+              <div class="progress-meter" aria-label="Data collection progress toward twelve weeks">
+                <div class="progress-meter__fill" id="progress-fill"></div>
+              </div>
+
+              <div class="progress-scale">
+                <span>Week 4</span>
+                <span>Goal: Week 12</span>
+              </div>
+            </article>
+
+            <div class="tracker-main">
+              <article class="visual-card reveal tracker-layout__interactive" data-reveal="scale">
+                <div class="tracker-card__header">
+                  <span class="card-kicker">Sleep impact tool</span>
+                  <strong>See how different sleep habits could affect a day</strong>
+                </div>
+                <h3>Test a sleep amount and compare the likely impact.</h3>
+                <p>
+                  Based on the patterns in my 4-week tracker, this interactive feature estimates how
+                  sleep can affect mood, concentration, energy, and daily performance.
+                </p>
+
+                <div class="impact-lab">
+                  <div class="impact-lab__controls">
+                    <label class="impact-lab__range">
+                      <span class="impact-lab__label">Hours slept</span>
+                      <div class="impact-lab__readout">
+                        <strong id="sleep-impact-value">8.2h</strong>
+                        <span id="sleep-impact-note">Strong school-day range</span>
+                      </div>
+                      <input
+                        class="impact-lab__slider"
+                        id="sleep-impact-range"
+                        type="range"
+                        min="5.5"
+                        max="10"
+                        step="0.1"
+                        value="8.2"
+                      />
+                      <div class="impact-lab__scale">
+                        <span>5.5h</span>
+                        <span>8h</span>
+                        <span>10h</span>
+                      </div>
+                    </label>
+
+                    <div class="impact-toggle-row">
+                      <label class="impact-toggle">
+                        <input id="sleep-impact-screen" type="checkbox" />
+                        <span>Screen in last 30 min</span>
+                      </label>
+                      <label class="impact-toggle">
+                        <input id="sleep-impact-caffeine" type="checkbox" />
+                        <span>Caffeine after 4 PM</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="impact-lab__results" id="sleep-impact-results"></div>
+                  <p class="impact-lab__summary" id="sleep-impact-summary"></p>
+                </div>
+              </article>
+
+              <article class="chart-card chart-card--wide reveal tracker-layout__chart">
+                <div class="tracker-card__header">
+                  <span class="card-kicker">4-week sleep chart</span>
+                  <strong>Daily sleep hours with the 8 to 10 hour target range</strong>
+                </div>
+                <h3>How the tracker changed across the month.</h3>
+                <p>
+                  The chart below uses the actual sleep-hour values from the tracker. The shaded band
+                  shows the recommended target range for teenagers.
+                </p>
+                <div class="sleep-chart-shell" id="sleep-chart"></div>
+              </article>
+            </div>
+
+            <div class="tracker-sidebar">
+              <article class="tracker-card reveal" data-reveal="right">
+                <div class="tracker-card__header">
+                  <span class="pill">Variables tracked</span>
+                </div>
+                <h3>What I recorded each day</h3>
+                <div class="tracker-metrics" id="tracker-metrics"></div>
+              </article>
+
+              <article class="tracker-card tracker-card--highlight reveal" data-reveal="scale">
+                <div class="tracker-card__header">
+                  <span class="pill pill--accent">Tracker findings</span>
+                </div>
+                <h3>What the 4-week data already suggests</h3>
+                <p>
+                  The tracker already shows a clear upward trend in sleep quantity, and it also hints
+                  at how screen time and caffeine may affect the total hours I got.
+                </p>
+                <ul class="check-list" id="data-findings"></ul>
+              </article>
+
+              <article class="chart-card reveal tracker-layout__weekly" data-reveal="right">
+                <div class="tracker-card__header">
+                  <span class="card-kicker">Weekly pattern</span>
+                  <strong>Sleep and focus improved together</strong>
+                </div>
+                <h3>Week-by-week changes from the tracker.</h3>
+                <p>
+                  These weekly snapshots make the growth easier to see than individual days alone.
+                </p>
+                <div class="week-grid" id="week-cards"></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--light" id="process">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Process and ATL skills</p>
+            <h2>Planning, tracking, analyzing, then communicating.</h2>
+            <p>
+              The project depended on both evidence and organization. Research and critical
+              thinking shaped the learning goal, while self-management and communication helped turn
+              that learning into a website for students.
+            </p>
+          </div>
+
+          <div class="process-grid">
+            <div class="timeline" id="timeline"></div>
+            <div class="skills-grid" id="skills-grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tint" id="tips">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Practical advice</p>
+            <h2>Simple sleep habits students can actually use.</h2>
+            <p>
+              These suggestions come from the research, my tracker focus, and the reflection that
+              followed. Use the filters to view different kinds of strategies.
+            </p>
+          </div>
+
+          <div class="filter-row" id="tip-filters" aria-label="Tip categories"></div>
+          <div class="tips-grid" id="tips-grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="reflection">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Reflection and evaluation</p>
+            <h2>What changed, what worked, and what I would improve next.</h2>
+            <p>
+              The project made sleep feel less passive and more like a foundation for how I learn
+              and function. It also helped me recognize which parts of the process were strongest
+              and what I would refine in a future version.
+            </p>
+          </div>
+
+          <div class="reflection-grid" id="reflection-grid"></div>
+          <div class="criteria-grid" id="criteria-grid"></div>
+        </div>
+      </section>
+
+      <section class="section section--light" id="sources">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Works cited</p>
+            <h2>Key sources behind the project.</h2>
+            <p>
+              These references helped me explain sleep scientifically while keeping the final
+              website understandable for students and teenagers.
+            </p>
+          </div>
+
+          <div class="sources-list" id="sources-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-shell">
+        <div>
+          <p class="eyebrow">Sleep &amp; Wellbeing</p>
+          <h2>Built to turn research into usable advice.</h2>
+        </div>
+        <p>
+          Built for a personal project on health and wellbeing, combining real sleep-tracker data,
+          charts, research, and student-focused advice in one finished website.
+        </p>
+      </div>
+    </footer>
+
+    <script src="sleep-wellbeing.js"></script>
+  </body>
+</html>
